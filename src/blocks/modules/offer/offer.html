@@ -1,0 +1,23 @@
+<section class="offer panel" id="offer">
+    <div class="overlay">
+        <img loading="lazy" class="overlay__img overlay__img_leaf_first" src="img/leaf1.png" alt="Фоновый элемент">
+        <img loading="lazy" class="overlay__img overlay__img_leaf_second" src="img/leaf2.png" alt="Фоновый элемент">
+        <img loading="lazy" class="overlay__img overlay__img_leaf_third" src="img/leaf3.png" alt="Фоновый элемент">
+        <img loading="lazy" class="overlay__img overlay__img_leaf_fourth" src="img/leaf4.png" alt="Фоновый элемент">
+        <img loading="lazy" class="overlay__img overlay__img_type_product" src="img/product.png" alt="Продукт">
+        <img loading="lazy" class="overlay__img overlay__img_type_wheat" src="img/wheat.png" alt="Пшеница">
+        <img loading="lazy" class="overlay__img overlay__img_type_potato" src="img/potato.png" alt="Картофель">
+    </div>
+    <div class="offer__wrapper">
+        <h1 class="offer__title">
+            <span class="offer__title offer__title_color_green">Повысьте</span>
+            <span class="offer__title offer__title_tranform_translate">
+                <span class="offer__title offer__title_tranform_skew">в 1,5 раза</span>
+            </span>
+            <strong class="offer__title offer__title_type_strong">урожайность</strong> при тех же затратах
+        </h1>
+    </div>
+    @@include('../../components/list/list.html', {
+        "moduleClass": "offer__list"
+    })
+</section>

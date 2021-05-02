@@ -1,0 +1,48 @@
+.nav {
+    position: fixed;
+    top: 0;
+    background: transparent;
+    width: 100%;
+    padding: 3rem 0 .9rem 0;
+    z-index: 99;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__img {
+        display: block;
+        height: 50px;
+        width: 50px;
+    }
+
+    &__button {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        cursor: pointer;
+        z-index: 98;
+    }
+}
+
+.sticky-nav {
+    padding: .9rem 0 .9rem 0;
+    background: linear-gradient(to left,#4db486 10%, #ddf5fb);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition: all 0.5s ease;
+    color: #fff;
+}

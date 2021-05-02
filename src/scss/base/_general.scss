@@ -1,0 +1,85 @@
+/* GENERAL DOCUMENT STYLES --START */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: $font-os;
+    font-size: $primary-font-size;
+    font-weight: $font-weght-normal;
+    line-height: $lineheight;
+    color: $primary-text-clr;
+    background-color: $primary-bg-clr;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+	position: relative;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a[href]:not([class]) {
+    color: $clr-green;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a[href^="http"]:empty::before {
+    content: attr(href);
+}
+
+button {
+    all: unset;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: $primary-text-clr dotted 1px;
+  outline-offset: .05em;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    font-size: $primary-font-size;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+/* GENERAL DOCUMENT STYLES --END */

@@ -1,0 +1,58 @@
+.menu {
+
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -310px;
+    bottom: 0;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 100px 0 0 0;
+    list-style: none;
+    background-color: #ffffff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+    z-index: 95;
+
+    &__item {
+        padding: 12px 24px;
+        &:hover {
+            background-color: $clr-light-green;
+        }
+    }
+
+    &__link {
+        --offset: 0;
+
+        color: #333;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+    }
+}
+/* Scroll --START */
+// :root {
+//     --offset: 0px;
+// }
+// a[ id= "offer" ]:target ~ #main section.panel {
+//     -webkit-transform: translateY( var(--offset) );
+//     transform: translateY( var(--offset) );
+// }
+
+// a[ id= "vantage" ]:target ~ #main section.panel {
+//     -webkit-transform: translateY( var(--offset) );
+//     transform: translateY( var(--offset) );
+// }
+// a[ id= "product" ]:target ~ #main section.panel {
+//     -webkit-transform: translateY( var(--offset) );
+//     transform: translateY( var(--offset) );
+// }
+// a[ id= "composition" ]:target ~ #main section.panel {
+//     -webkit-transform: translateY( var(--offset) );
+//     transform: translateY( var(--offset) );
+// }
+/* Scroll --END */

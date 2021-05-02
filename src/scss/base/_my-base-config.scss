@@ -1,0 +1,39 @@
+@import '../vendor/import/bootstrap';
+
+/* Bootstrap only container --START */ 
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$grid-breakpoints: (
+	xs: 0px, 
+	sm: 576px, 
+	md: 768px, 
+	lg: 992px, 
+	xl: 1200px, 
+	xxl :1400px, 
+);
+$container-max-widths: (
+	sm: 540px, 
+	md: 720px, 
+	lg: 960px, 
+	xl: 1140px, 
+	xxl: 1320px, 
+);
+@mixin make-max-width-container($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+	@each $breakpoint, $max-width in $max-widths {
+		@include media-breakpoint-up($breakpoint, $breakpoints) {
+			max-width: $max-width;
+		}
+	}
+}
+
+.container {
+	@include make-container();
+	@include make-max-width-container()
+}
+/* Bootstrap only container --END */ 
+section {
+	-webkit-transform: translateZ( 0 );
+    transform: translateZ( 0 );
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+}
