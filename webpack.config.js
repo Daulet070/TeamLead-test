@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
     entry: {
         main: './src/js/index.js',
@@ -38,5 +40,10 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+        alias: {
+            "%modules%": path.resolve(__dirname, "src/blocks/modules")
+        }
+    }
 
 };

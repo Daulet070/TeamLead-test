@@ -1,0 +1,152 @@
+.contact {
+	background-color: #e5e5f7;
+	opacity: 0.8;
+	background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#444cf7 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #444cf7 8px, #e5e5f7 8px) -4px 0;
+	background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+	padding: 4rem 0;
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 1rem;
+
+		&_ferst {
+			flex-basis: 100%;
+		}
+		
+		&_second {
+			flex-basis: 100%;
+
+		}
+
+		&_third {
+			flex-basis: calc(50% - 1rem);
+		}
+
+		&_fourth {
+			flex-basis: calc(50% - 1rem);
+			justify-content: normal;
+			width: 100%;
+		}
+	}
+
+	&__title {
+		font-size: 50px;
+		font-weight: 800;
+		color: rgb(158, 40, 158);
+		text-align: center;
+	}
+
+	&__timer {
+		font-size: 40px;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	&__promo {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	&__image {
+		width: 150px;
+		height: 234px;
+		object-fit: cover;
+	}
+
+	&__product-price {
+		display: flex;
+		flex-direction: column;
+		gap: .5rem;
+		align-items: center;
+    	width: 100%;
+	}
+
+	&__new-price {
+		animation: .3s ease 0s infinite alternate scale;
+		color: red;
+		font-size: 34px;
+		font-weight: 700;
+		line-height: 1;
+		transform: scale(1);
+		
+		@keyframes scale {
+			from {
+				transform: scale(1);
+			} 
+			to {
+				transform: scale(1.2);
+			}
+		}
+
+	}
+	
+	&__old-price {
+		font-size: 24px;
+		font-weight: 500;
+		text-decoration: line-through;
+	}
+
+	&__form {
+		background-color: #fff;
+		padding: 2.5rem 2rem 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 1.5rem;
+		height: 100%;
+		width: 100%;
+		min-width: 300px;
+		max-width: 400px;
+	}
+
+	&__label {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__name-hint {
+		font-size: 13px;
+		color: orange;
+		display: none;
+		margin-left: auto;
+	}
+
+	&__phone-hint {
+		font-size: 13px;
+		color: orange;
+		display: none;
+		margin-left: auto;
+	}
+
+	&__input {
+		padding: .6rem;
+		width: 100%;
+
+
+		// &_name {
+		// }
+	
+		// &_phone {
+		// }
+
+		&::placeholder {
+			font-size: 16px;
+		}
+	}
+
+	&__button {
+		color: #fff;
+		padding: .5rem 2rem;
+		text-align: center;
+	}
+}

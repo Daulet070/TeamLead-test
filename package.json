@@ -1,7 +1,7 @@
 {
-  "name": "red-rowant-test",
+  "name": "team-lead-test",
   "version": "1.0.0",
-  "homepage": "https://daulet070.github.io/RedRowan-test/",
+  "homepage": "https://daulet070.github.io/TeamLead-test/",
   "description": "My GWSH (Gulp Webpack SCSS HTML) light template",
   "main": "index.js",
   "scripts": {
@@ -45,6 +45,7 @@
     "webpack-stream": "^6.1.2"
   },
   "dependencies": {
+    "@splidejs/splide": "^2.4.21",
     "bootstrap": "^5.0.0-beta3",
     "core-js": "^3.10.1",
     "del": "^6.0.0",

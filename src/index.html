@@ -2,29 +2,30 @@
 <html lang="ru">
 <head>
 	@@include('view/meta/meta.html', {
-		"title": "Земля РФ",
-		"decription": "Повысьте урожайность!",
-		"keywords": "урожай",
+		"title": "LevelUp",
+		"decription": "LevelUp",
+		"keywords": "LevelUp",
 		"ogLocale": "ru_Ru",
-		"ogSiteName": "Земля РФ",
+		"ogSiteName": "LevelUp",
 		"ogType": "article",
 		"ogImage": "img/zem.webp",
-		"ogTitle": "Повысьте урожайность!",
-		"ogDescription": "Повысьте урожайность в 1,5 раза при тех же ценах",
+		"ogTitle": "LevelUp",
+		"ogDescription": "LevelUp",
 		"ogUrl": "https://vintage-example.ru",
 		"stylePath": "css/main.css"
 	})
 </head>
 <body>
-	@@include('blocks/components/menu/menu.html')
-	@@include('blocks/modules/header/header.html')
+	<!-- @@include('blocks/components/menu/menu.html') -->
+	@@include('blocks/modules/offer/offer.html')
 	<main class="main" id="main">
-		@@include('blocks/modules/offer/offer.html')
-		@@include('blocks/modules/vantage/vantage.html')
 		@@include('blocks/modules/product/product.html')
-		@@include('blocks/modules/composition/composition.html')
+		@@include('blocks/modules/feedback/feedback.html')
+		@@include('blocks/modules/promo/promo.html')
+		@@include('blocks/modules/contact/contact.html')
 	</main>
 	@@include('blocks/modules/footer/footer.html')
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

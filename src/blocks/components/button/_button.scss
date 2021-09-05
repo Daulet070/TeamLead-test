@@ -1,0 +1,15 @@
+.btn {
+    --hue: 288;
+    --saturation: 100%;
+    --lightness: 25%;
+
+    background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+    color: var(--txt-clr);
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 2rem;
+
+    &:hover {
+        --lightness: 30%;
+    }
+}

@@ -1,0 +1,80 @@
+.promo {
+    background: rgb(183,126,222);
+	background: linear-gradient(340deg, rgba(183,126,222,1) 0%, rgba(240,132,132,1) 50%, rgba(251,219,173,1) 100%);
+    position: relative;
+    display: flex;
+    padding: 4rem 0;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        z-index: 0;
+    }
+
+    &__content-item {
+        flex-basis: calc(50% - .25rem);
+        
+        &_left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_right {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            gap: 1rem;
+        }
+
+        &_bottom {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: center;
+            padding: 1rem 0;
+            
+        }
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+        color: gold;
+    }
+    
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__image {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    &__list {
+        color: $clr-white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    &__list-item {
+        font-size: 28px;
+    }
+
+    &__button {
+        --txt-clr: white;
+        font-size: 16px;
+        letter-spacing: .2em;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

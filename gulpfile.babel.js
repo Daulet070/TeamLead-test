@@ -1,5 +1,3 @@
-'use strict';
-
 import fs from 'fs';
 
 import { src, dest, parallel, series, watch } from 'gulp';
