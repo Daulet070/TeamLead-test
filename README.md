@@ -1,12 +1,11 @@
-## Тестовое задание RedRowant
+## Тестовое задание TeamLead
 ### Моя сборка (gulp+webpack) для гибкой верстки проектов различной сложности
 
-![Показатели lighthouse](https://github.com/Daulet070/RedRowant-test/raw/main/src/img/web-vitals.png)
-
+<code> git clone https://github.com/Daulet070/TeamLead-test.git </code><br>
 <code> npm i </code><br>
 <code> npm run dev </code><br>
 <code> npm run build </code>
 
 ## Структура папок
 #### src
-Папка blocks содержит папку modules где находятся основные секции страницы и папку components куда вынесеные переиспользуемые компоненты
+Папка blocks содержит папку modules где находятся основные секции страницы и папку components куда вынесены переиспользуемые компоненты
