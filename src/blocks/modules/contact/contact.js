@@ -2,7 +2,7 @@ const timerHours = document.querySelector('#timer-hours'),
     timerMinutes = document.querySelector('#timer-minutes'),
     timerSeconds = document.querySelector('#timer-seconds'),
     form = document.querySelector('form'),
-    deadline = '07 September 2021';
+    deadline = '30 September 2021';
 
 const getTimeRemaining = (deadline) => {
     
